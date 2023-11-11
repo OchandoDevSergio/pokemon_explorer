@@ -1,0 +1,20 @@
+ .cardDesign {
+    margin: 1em;
+    padding: 1em;
+    height: 5em;
+    width: 10em;
+    /* background-color:yellow; */
+    background-image:url(https://iili.io/JBLBpne.md.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    font-family: Cambria;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    align-items: center;
+    /* border-radius: 1em; */
+    border: 0.1em solid black;
+    font-weight:bold;
+ }
