@@ -1,5 +1,21 @@
 .header{
-    background-color: yellow;
+    background-color: rgb(220,58,53);
+    height: 6em;
+    width: 96em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeButton{
     height: 5em;
-    width: 94.95em;
+    width: 14em;
+    background-image:url(https://iili.io/JC3nj8x.md.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.homeButton:hover {
+    cursor: pointer;
 }

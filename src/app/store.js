@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import pacienteSlice from "../pages/pacienteSlice";
-// import profesionalSlice from "../pages/profesionalSlice";
-// import polizaSlice from "../pages/polizaSlice";
+import pokemonSlice from "../Views/pokemonSlice";
+
 
 //storage es de redux-persist para que la información no se pierda en una eventual recarga
 import storage from "redux-persist/lib/storage";
@@ -12,9 +11,7 @@ import thunk from "redux-thunk";
 
 
 const reducers = combineReducers({
-  // paciente: pacienteSlice,
-  // profesional: profesionalSlice,
-  // poliza: polizaSlice,
+  pokemon: pokemonSlice,
 });
 
 const persistConfig = {

@@ -1,5 +1,5 @@
  .cardDesign {
-    margin: 1em;
+    margin: 2em;
     padding: 1em;
     height: 5em;
     width: 10em;
@@ -9,7 +9,8 @@
     background-repeat:no-repeat;
     background-position: center center;
     font-family: Cambria;
-    color: black;
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.2em;
     display: flex;
     flex-direction: row;
     justify-content:end;
@@ -18,3 +19,8 @@
     border: 0.1em solid black;
     font-weight:bold;
  }
+
+ .cardDesign:hover {
+   cursor: pointer;
+   box-shadow: inset 0em 0em 1em 1em rgba(0, 0, 0, 0.2);
+}

@@ -1,5 +1,7 @@
 .footer{
-    background-color: yellow;
+    background-color: rgb(220,58,53);
     height: 2em;
-    width:  94.95em;
+    width:  96em;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }

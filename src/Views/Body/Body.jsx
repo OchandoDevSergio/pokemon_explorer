@@ -7,7 +7,7 @@ export const Body = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mostrarpokemon" element={<ShowPokemon />} />
+        <Route path="/pokemon" element={<ShowPokemon />} />
       </Routes>
     </>
   );

@@ -1,0 +1,18 @@
+.infinite-scroll-container {
+    /* width: 100vw; */
+    /* background-color: rgb(230, 229, 229); */
+    overflow: auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.homeDesign {
+    height: 36.7em;
+    /* background-color: rgb(230, 229, 229); */
+    background-image:url(https://iili.io/JC3rd6x.md.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
