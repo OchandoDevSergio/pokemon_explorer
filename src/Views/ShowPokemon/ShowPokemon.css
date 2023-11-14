@@ -73,3 +73,9 @@
     font-family: Cambria;
     color: greenyellow;
 }
+
+.mealPic{
+    height: 5em;
+    width: 5em;
+    border: 0.1em solid greenyellow;
+}

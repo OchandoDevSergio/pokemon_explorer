@@ -3,6 +3,7 @@ import { pokemonDataCheck } from "../pokemonSlice";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { bringPokemonData } from '../../services/apiCalls';
+import { bringMealData } from '../../services/apiCalls';
 
 export const ShowPokemon = () => {
     const reduxPokemonData = useSelector(pokemonDataCheck);
@@ -18,11 +19,13 @@ export const ShowPokemon = () => {
     const [specialAttackBase, setSpecialAttackBase] = useState();
     const [specialDefenseBase, setSpecialDefenseBase] = useState();
     const [speed, setSpeed] = useState();
+    const [meal, setMeal] = useState([]);
+    const [mealName, setMealName] = useState();
+    const [mealPicture, setMealPicture] = useState();
 
     useEffect(() => {
         setPokemonUrl(reduxPokemonData.pokemonData.url);
       });
-     //console.log("soy pokemonUrl", pokemonUrl);
 
     useEffect(() => {
      bringPokemonData(pokemonUrl)
@@ -34,10 +37,7 @@ export const ShowPokemon = () => {
                 habilidades.push(" ");}
                else {break}
                setAbilities(habilidades)
-              //  console.log("soy habilidades", habilidades)
             }
-            // console.log("soy habilidades2", habilidades)
-            // console.log("soy resultado", resultado)
             setNombre(resultado.data.name)
             setImagen(resultado.data.sprites.front_default)
             setHpBase(resultado.data.stats[0].base_stat)
@@ -50,8 +50,20 @@ export const ShowPokemon = () => {
       )
       .catch(error => console.log(error));
     }),{};
-    useEffect(() => { 
-    console.log("soy habilidades3", habilidades)}), {habilidades};
+
+    useEffect(() => {
+      if (meal.length === 0){
+      bringMealData()
+       .then(
+          resultado => {
+            console.log("soy resultado", resultado)
+            setMeal(resultado.data.meals)
+            setMealName(resultado.data.meals[0].strMeal)
+            setMealPicture(resultado.data.meals[0].strMealThumb)
+          }
+       )
+       .catch(error => console.log(error));}
+     });
 
 
 
@@ -73,6 +85,8 @@ export const ShowPokemon = () => {
               <div className='data'>Ataque especial base: {specialAttackBase}</div>
               <div className='data'>Defensa especial base: {specialDefenseBase}</div>
               <div className='data'>Velocidad: {speed}</div>
+              <div className='data'>Comida recomendada: {mealName}</div>
+              <img className='mealPic' src={mealPicture}></img>
             </div>
           </div>
           </div>
