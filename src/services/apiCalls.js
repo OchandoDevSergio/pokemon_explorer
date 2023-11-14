@@ -15,5 +15,4 @@ export const bringMealData = async () => {
 export const searchCriteria = async (criteria) => {
 
     return await axios.get(`https://pokeapi.co/api/v2/pokemon/${criteria}/`);
-    console.log("soy criteria", criteria)
   };

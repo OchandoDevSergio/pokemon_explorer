@@ -34,7 +34,6 @@ export const ShowPokemon = () => {
           searchCriteria(criteria)
             .then((resultado) => {
               setHabilidades([" "]);
-              console.log("soy habilidades", habilidades)
                 for (let i=0; i < resultado.data.abilities.length; i++) {
                   if (habilidades[0] !== resultado.data.abilities[i].ability.name )
                    {habilidades.push(resultado.data.abilities[i].ability.name);
@@ -53,7 +52,6 @@ export const ShowPokemon = () => {
                   bringMealData()
                    .then(
                       resultado => {
-                        console.log("soy resultado", resultado)
                         setMeal(resultado.data.meals)
                         setMealName(resultado.data.meals[0].strMeal)
                         setMealPicture(resultado.data.meals[0].strMealThumb)
@@ -88,7 +86,6 @@ export const ShowPokemon = () => {
                   bringMealData()
                    .then(
                       resultado => {
-                        console.log("traigo comida", resultado)
                         setMeal(resultado.data.meals)
                         setMealName(resultado.data.meals[0].strMeal)
                         setMealPicture(resultado.data.meals[0].strMealThumb)

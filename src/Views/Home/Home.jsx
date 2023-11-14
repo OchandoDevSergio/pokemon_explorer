@@ -13,13 +13,10 @@ export const Home = () => {
           bringPokemons()
                 .then(
                     resultado => {
-                        console.log("soy resultado", resultado)
                         setPokemons(resultado.data.results);
                     }
                 )
                 .catch(error => console.log(error));
-        } else {
-            console.log(pokemons);
         }
     },[pokemons]);
 
