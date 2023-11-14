@@ -1,0 +1,75 @@
+.showPokemon {
+    height: 36.7em;
+    /* background-color: grey; */
+    background-image:url(https://iili.io/JC3rd6x.md.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex {
+    height: 32em;
+    width: 50em;
+    background-color: rgb(255,79,79);
+    border: 0.2em solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftSide {
+    height: 31.75em;
+    width: 25em;
+    border-right: 0.2em solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0em 0em 1em 1em rgba(0, 0, 0, 0.2);
+}
+
+.rightSide {
+    height: 31.75em;
+    width: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0em 0em 1em 1em rgba(0, 0, 0, 0.2);
+}
+
+.screenFrame {
+    height: 15em;
+    width: 20em;
+    background-color: lightgrey;
+    border: 0.1em solid black;
+    border-radius: 1em 1em 1em 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    height: 12em;
+    width: 17em;
+    background-color: white;
+    border: 0.1em solid black;
+    border-radius: 1em 1em 1em 3em;
+}
+
+.dataDisplay {
+    height: 27em;
+    width: 20em;
+    background-color: black;
+    border: 0.1em solid black;
+    border-radius:1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    font-family: Cambria;
+    color: greenyellow;
+}
