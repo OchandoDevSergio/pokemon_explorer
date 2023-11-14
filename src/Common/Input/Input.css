@@ -1,5 +1,6 @@
 .defaultInput {
+    margin: 1em;
     width: 20vw;
     border-radius: 10em;
-    border: solid goldenrod;
+    border: 0.1em solid black;
 }
