@@ -38,7 +38,7 @@ La primera vista que encontramos al acceder, es la vista **Home**: en esta vista
 
 La otra vista de la aplicación es la vista **ShowPokemon** donde encontramos un diseño similar al de las "pokédex" que aparecen en las producciones de pokemon, con un Input en su interior en el que se nos insta a buscar algún pokemon por su nombre. Como accederemos a esta vista tras haber cargado a Redux los datos de un pokemon, la vista los importará y empleará el URL que contienen para hacer una llamada del tipo GET a la PokeAPI y traer toda la información del pokemon. Esta información se mostrará en pantalla (incluida una imagen del pokemon) y además se hará una llamada también del tipo GET a la API TheMealDB, al enlace https://www.themealdb.com/api/json/v1/1/random.php que nos devolverá la información de un plato aleatorio contenido en su base de datos, mostrándose también su nombre y una imagen en la pokédex. Si empleamos el Input de búsqueda para buscar algún otro pokemon, se realizará una llamada a la PokeAPI que traerá sus datos y se sustituirán los del pokemon que habíamos clickado por éstos, realizado además otra llamada a TheMealDB para sustituir también el plato que se muestra en pantalla.
 
-![showpokemon](https://iili.io/JCODfJ2.md.jpg)
+![showpokemon](https://iili.io/JndA76J.md.jpg)
 
 ### Errores conocidos
 
